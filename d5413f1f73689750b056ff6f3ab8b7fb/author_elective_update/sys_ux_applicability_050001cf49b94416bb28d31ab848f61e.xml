@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability">
+  <sys_ux_applicability action="DELETE" apply_defaults="true">
+    <sys_id>050001cf49b94416bb28d31ab848f61e</sys_id>
+    <sys_scope display_value="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+    <sys_update_name>sys_ux_applicability_050001cf49b94416bb28d31ab848f61e</sys_update_name>
+    <active>true</active>
+    <description>Users holding x_637605_box_ext_0.box_workspace_user.</description>
+    <name>Box Embed Demo Workspace Audience</name>
+    <role_names/>
+    <roles>0071b40667024c34b9b01853982ea183</roles>
+  </sys_ux_applicability>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</application>
+        <file_path/>
+        <instance_id>c7b257323b35871c16e44a8aa4e45a96</instance_id>
+        <instance_name>dev422158</instance_name>
+        <name>sys_ux_applicability_050001cf49b94416bb28d31ab848f61e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability">
+  <sys_ux_applicability action="INSERT_OR_UPDATE" apply_defaults="true">
+    <sys_id>050001cf49b94416bb28d31ab848f61e</sys_id>
+    <sys_scope display_value="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+    <sys_update_name>sys_ux_applicability_050001cf49b94416bb28d31ab848f61e</sys_update_name>
+    <active>true</active>
+    <description>Users holding x_637605_box_ext_0.box_workspace_user.</description>
+    <name>Box Embed Demo Workspace Audience</name>
+    <role_names/>
+    <roles>0071b40667024c34b9b01853982ea183</roles>
+  </sys_ux_applicability>
+</record_update>]]></payload>
+        <payload_hash>884657390</payload_hash>
+        <record_name>Box Embed Demo Workspace Audience</record_name>
+        <reverted_from/>
+        <source>dde63f6773281b50b056ff6f3ab8b77c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 20:52:20</sys_created_on>
+        <sys_id>5ee67f6773281b50b056ff6f3ab8b7a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1fabb49560000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 20:52:20</sys_updated_on>
+        <type>Audience</type>
+        <update_guid>dae67f6777281b50958b35d246b3a1a2</update_guid>
+        <update_guid_history>dae67f6777281b50958b35d246b3a1a2:-319433400</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 21:13:06</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_applicability">sys_ux_applicability</sys_db_object>
+        <sys_id>8c25c63455da4543bc6c06ee68f82399</sys_id>
+        <sys_metadata>050001cf49b94416bb28d31ab848f61e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Box Embed Demo Workspace Audience</sys_name>
+        <sys_package display_value="Box Embed Demo" source="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+        <sys_scope_delete display_value="">1f70ed90a4d641c8975bcee8709cefc1</sys_scope_delete>
+        <sys_update_name>sys_ux_applicability_050001cf49b94416bb28d31ab848f61e</sys_update_name>
+        <sys_update_version display_value="sys_ux_applicability_050001cf49b94416bb28d31ab848f61e">5ee67f6773281b50b056ff6f3ab8b7a3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 21:13:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

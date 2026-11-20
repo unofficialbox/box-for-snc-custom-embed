@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+  <sys_user_role action="DELETE" apply_defaults="true">
+    <sys_id>0071b40667024c34b9b01853982ea183</sys_id>
+    <sys_scope display_value="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+    <sys_update_name>sys_user_role_0071b40667024c34b9b01853982ea183</sys_update_name>
+    <assignable_by/>
+    <can_delegate>true</can_delegate>
+    <description>Grants access to the Box Embed Demo workspace (/now/box-embed-demo). Contains canvas_user, which is required for any UX workspace experience.</description>
+    <elevated_privilege>false</elevated_privilege>
+    <grantable>true</grantable>
+    <name>x_637605_box_ext_0.box_workspace_user</name>
+    <scoped_admin>false</scoped_admin>
+    <suffix>box_workspace_user</suffix>
+    <sys_name>x_637605_box_ext_0.box_workspace_user</sys_name>
+  </sys_user_role>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</application>
+        <file_path/>
+        <instance_id>c7b257323b35871c16e44a8aa4e45a96</instance_id>
+        <instance_name>dev422158</instance_name>
+        <name>sys_user_role_0071b40667024c34b9b01853982ea183</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+  <sys_user_role action="INSERT_OR_UPDATE" apply_defaults="true">
+    <sys_id>0071b40667024c34b9b01853982ea183</sys_id>
+    <sys_scope display_value="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+    <sys_update_name>sys_user_role_0071b40667024c34b9b01853982ea183</sys_update_name>
+    <assignable_by/>
+    <can_delegate>true</can_delegate>
+    <description>Grants access to the Box Embed Demo workspace (/now/box-embed-demo). Contains canvas_user, which is required for any UX workspace experience.</description>
+    <elevated_privilege>false</elevated_privilege>
+    <grantable>true</grantable>
+    <name>x_637605_box_ext_0.box_workspace_user</name>
+    <scoped_admin>false</scoped_admin>
+    <suffix>box_workspace_user</suffix>
+    <sys_name>x_637605_box_ext_0.box_workspace_user</sys_name>
+  </sys_user_role>
+</record_update>]]></payload>
+        <payload_hash>345388738</payload_hash>
+        <record_name>x_637605_box_ext_0.box_workspace_user</record_name>
+        <reverted_from/>
+        <source>dde63f6773281b50b056ff6f3ab8b77c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 20:52:20</sys_created_on>
+        <sys_id>cae67f6773281b50b056ff6f3ab8b77b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1fabb48250000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 20:52:20</sys_updated_on>
+        <type>Role</type>
+        <update_guid>8ae67f6797281b50f4158d63a07ea67a</update_guid>
+        <update_guid_history>8ae67f6797281b50f4158d63a07ea67a:-1929584261</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_637605_box_ext_0.box_workspace_user">cafb7ba373681b50b056ff6f3ab8b7dc</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 21:14:27</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>16124b526de64d3083ed9cb1f7b55410</sys_id>
+        <sys_metadata>0071b40667024c34b9b01853982ea183</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_637605_box_ext_0.box_workspace_user</sys_name>
+        <sys_package display_value="Box Embed Demo" source="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+        <sys_scope_delete display_value="">1f70ed90a4d641c8975bcee8709cefc1</sys_scope_delete>
+        <sys_update_name>sys_user_role_0071b40667024c34b9b01853982ea183</sys_update_name>
+        <sys_update_version display_value="sys_user_role_0071b40667024c34b9b01853982ea183">cae67f6773281b50b056ff6f3ab8b77b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 21:14:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

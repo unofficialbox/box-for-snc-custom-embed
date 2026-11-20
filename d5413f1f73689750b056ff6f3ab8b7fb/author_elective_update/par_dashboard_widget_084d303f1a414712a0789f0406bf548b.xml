@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_widget">
+  <par_dashboard_widget action="DELETE" apply_defaults="true">
+    <sys_id>084d303f1a414712a0789f0406bf548b</sys_id>
+    <sys_scope display_value="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+    <sys_update_name>par_dashboard_widget_084d303f1a414712a0789f0406bf548b</sys_update_name>
+    <canvas dashboard="20611c7a055e46cebc09dab26af51c60" dashboard_tab="9e76840e2c744f7c8497e06cbef4152a">7034a021af6943379648a7e315189f5b</canvas>
+    <component>d24d53f60350de7a652caf3188a46ed2</component>
+    <component_props>{"headerTitle":"Failed log entries","description":"Box log rows with status = failed.","showHeader":true,"showBorder":true,"showZero":true,"dataSources":[{"label":"Logs","sourceType":"table","tableOrViewName":"x_bonh_box_box_logs","filterQuery":"status=failed","id":"ds_logs_failed"}],"metrics":[{"dataSource":"ds_logs_failed","id":"metric_logs_failed_count","aggregateFunction":"COUNT","axisId":"primary"}]}</component_props>
+    <h>7</h>
+    <name>Failed log entries</name>
+    <sys_domain>global</sys_domain>
+    <w>16</w>
+    <x>16</x>
+    <y>3</y>
+  </par_dashboard_widget>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</application>
+        <file_path/>
+        <instance_id>c7b257323b35871c16e44a8aa4e45a96</instance_id>
+        <instance_name>dev422158</instance_name>
+        <name>par_dashboard_widget_084d303f1a414712a0789f0406bf548b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_widget">
+  <par_dashboard_widget action="INSERT_OR_UPDATE" apply_defaults="true">
+    <sys_id>084d303f1a414712a0789f0406bf548b</sys_id>
+    <sys_scope display_value="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+    <sys_update_name>par_dashboard_widget_084d303f1a414712a0789f0406bf548b</sys_update_name>
+    <canvas dashboard="20611c7a055e46cebc09dab26af51c60" dashboard_tab="9e76840e2c744f7c8497e06cbef4152a">7034a021af6943379648a7e315189f5b</canvas>
+    <component>d24d53f60350de7a652caf3188a46ed2</component>
+    <component_props>{"headerTitle":"Failed log entries","description":"Box log rows with status = failed.","showHeader":true,"showBorder":true,"showZero":true,"dataSources":[{"label":"Logs","sourceType":"table","tableOrViewName":"x_bonh_box_box_logs","filterQuery":"status=failed","id":"ds_logs_failed"}],"metrics":[{"dataSource":"ds_logs_failed","id":"metric_logs_failed_count","aggregateFunction":"COUNT","axisId":"primary"}]}</component_props>
+    <h>7</h>
+    <name>Failed log entries</name>
+    <sys_domain>global</sys_domain>
+    <w>16</w>
+    <x>16</x>
+    <y>3</y>
+  </par_dashboard_widget>
+</record_update>]]></payload>
+        <payload_hash>-1609113447</payload_hash>
+        <record_name>Failed log entries</record_name>
+        <reverted_from/>
+        <source>dde63f6773281b50b056ff6f3ab8b77c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 20:52:19</sys_created_on>
+        <sys_id>bde67f6773281b50b056ff6f3ab8b726</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1fabb43b40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 20:52:19</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>3de67f6791281b50794c1f36db05e325</update_guid>
+        <update_guid_history>3de67f6791281b50794c1f36db05e325:1887460571</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Failed log entries">d5fb3ba373681b50b056ff6f3ab8b77b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 21:14:24</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>50830e14b01b4c1b9a8b94014511c7d9</sys_id>
+        <sys_metadata>084d303f1a414712a0789f0406bf548b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Failed log entries</sys_name>
+        <sys_package display_value="Box Embed Demo" source="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+        <sys_scope_delete display_value="">1f70ed90a4d641c8975bcee8709cefc1</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_084d303f1a414712a0789f0406bf548b</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_084d303f1a414712a0789f0406bf548b">bde67f6773281b50b056ff6f3ab8b726</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 21:14:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_list">
+    <sys_ux_applicability_m2m_list action="DELETE">
+        <active>true</active>
+        <applicability/>
+        <list/>
+        <order>0</order>
+        <sys_class_name>sys_ux_applicability_m2m_list</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 20:52:20</sys_created_on>
+        <sys_id>e7b3ef999136412b9459cf7ca731f75e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Box Embed Demo" source="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+        <sys_update_name>sys_ux_applicability_m2m_list_e7b3ef999136412b9459cf7ca731f75e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 20:52:20</sys_updated_on>
+    </sys_ux_applicability_m2m_list>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</application>
+        <file_path/>
+        <instance_id>c7b257323b35871c16e44a8aa4e45a96</instance_id>
+        <instance_name>dev422158</instance_name>
+        <name>sys_ux_applicability_m2m_list_e7b3ef999136412b9459cf7ca731f75e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_list"><sys_ux_applicability_m2m_list action="INSERT_OR_UPDATE"><active>true</active><applicability/><list/><order>0</order><sys_class_name>sys_ux_applicability_m2m_list</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-20 20:52:20</sys_created_on><sys_id>e7b3ef999136412b9459cf7ca731f75e</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Box Embed Demo" source="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_package><sys_policy/><sys_scope display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope><sys_update_name>sys_ux_applicability_m2m_list_e7b3ef999136412b9459cf7ca731f75e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-20 20:52:20</sys_updated_on></sys_ux_applicability_m2m_list></record_update>]]></payload>
+        <payload_hash>968666757</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>225b736373681b50b056ff6f3ab8b708</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 21:13:06</sys_created_on>
+        <sys_id>66ab7f6373681b50b056ff6f3ab8b74a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1face4e330000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 21:13:06</sys_updated_on>
+        <type>List Applicability</type>
+        <update_guid>aeab7f63e4681b5072b4680d45281049</update_guid>
+        <update_guid_history>aeab7f63e4681b5072b4680d45281049:0,52ab3f6390681b50c3762137f43d1b90:0,12e67f67a7281b50dc91c33f99aed6c4:-971036415</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 21:14:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_applicability_m2m_list">sys_ux_applicability_m2m_list</sys_db_object>
+        <sys_id>9517807df89f4190acce0e85c51e2840</sys_id>
+        <sys_metadata>e7b3ef999136412b9459cf7ca731f75e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Box Embed Demo" source="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+        <sys_scope_delete display_value="">1f70ed90a4d641c8975bcee8709cefc1</sys_scope_delete>
+        <sys_update_name>sys_ux_applicability_m2m_list_e7b3ef999136412b9459cf7ca731f75e</sys_update_name>
+        <sys_update_version display_value="sys_ux_applicability_m2m_list_e7b3ef999136412b9459cf7ca731f75e">66ab7f6373681b50b056ff6f3ab8b74a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 21:14:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

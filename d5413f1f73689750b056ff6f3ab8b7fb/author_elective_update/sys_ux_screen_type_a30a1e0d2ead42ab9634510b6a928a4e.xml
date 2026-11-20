@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_screen_type">
+  <sys_ux_screen_type action="DELETE" apply_defaults="true">
+    <sys_id>a30a1e0d2ead42ab9634510b6a928a4e</sys_id>
+    <sys_scope display_value="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+    <sys_update_name>sys_ux_screen_type_a30a1e0d2ead42ab9634510b6a928a4e</sys_update_name>
+    <description/>
+    <name>Dashboards Default</name>
+  </sys_ux_screen_type>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</application>
+        <file_path/>
+        <instance_id>c7b257323b35871c16e44a8aa4e45a96</instance_id>
+        <instance_name>dev422158</instance_name>
+        <name>sys_ux_screen_type_a30a1e0d2ead42ab9634510b6a928a4e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_screen_type">
+  <sys_ux_screen_type action="INSERT_OR_UPDATE" apply_defaults="true">
+    <sys_id>a30a1e0d2ead42ab9634510b6a928a4e</sys_id>
+    <sys_scope display_value="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+    <sys_update_name>sys_ux_screen_type_a30a1e0d2ead42ab9634510b6a928a4e</sys_update_name>
+    <description/>
+    <name>Dashboards Default</name>
+  </sys_ux_screen_type>
+</record_update>]]></payload>
+        <payload_hash>649124901</payload_hash>
+        <record_name>Dashboards Default</record_name>
+        <reverted_from/>
+        <source>dde63f6773281b50b056ff6f3ab8b77c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 20:52:22</sys_created_on>
+        <sys_id>3ee6bf6773281b50b056ff6f3ab8b7b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1fabb517a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 20:52:22</sys_updated_on>
+        <type>UX Screen Collection</type>
+        <update_guid>fae6bf6750281b503693b8e6ed8f94b2</update_guid>
+        <update_guid_history>fae6bf6750281b503693b8e6ed8f94b2:-1378969765</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 21:13:04</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen_type">sys_ux_screen_type</sys_db_object>
+        <sys_id>59b1ee764a934c7a93c0ebe6640d93d1</sys_id>
+        <sys_metadata>a30a1e0d2ead42ab9634510b6a928a4e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Dashboards Default</sys_name>
+        <sys_package display_value="Box Embed Demo" source="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+        <sys_scope_delete display_value="">1f70ed90a4d641c8975bcee8709cefc1</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_type_a30a1e0d2ead42ab9634510b6a928a4e</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_type_a30a1e0d2ead42ab9634510b6a928a4e">3ee6bf6773281b50b056ff6f3ab8b7b3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 21:13:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

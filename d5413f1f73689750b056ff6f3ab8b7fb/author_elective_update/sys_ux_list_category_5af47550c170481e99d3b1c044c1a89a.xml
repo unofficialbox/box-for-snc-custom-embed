@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_list_category">
+  <sys_ux_list_category action="DELETE" apply_defaults="true">
+    <sys_id>5af47550c170481e99d3b1c044c1a89a</sys_id>
+    <sys_scope display_value="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+    <sys_update_name>sys_ux_list_category_5af47550c170481e99d3b1c044c1a89a</sys_update_name>
+    <active>true</active>
+    <configuration>fbc1e71454c04e75b4f51ca40a100e14</configuration>
+    <description>Who is mapped into Box, internally and externally.</description>
+    <order>300</order>
+    <title>Access</title>
+  </sys_ux_list_category>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</application>
+        <file_path/>
+        <instance_id>c7b257323b35871c16e44a8aa4e45a96</instance_id>
+        <instance_name>dev422158</instance_name>
+        <name>sys_ux_list_category_5af47550c170481e99d3b1c044c1a89a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_list_category">
+  <sys_ux_list_category action="INSERT_OR_UPDATE" apply_defaults="true">
+    <sys_id>5af47550c170481e99d3b1c044c1a89a</sys_id>
+    <sys_scope display_value="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+    <sys_update_name>sys_ux_list_category_5af47550c170481e99d3b1c044c1a89a</sys_update_name>
+    <active>true</active>
+    <configuration>fbc1e71454c04e75b4f51ca40a100e14</configuration>
+    <description>Who is mapped into Box, internally and externally.</description>
+    <order>300</order>
+    <title>Access</title>
+  </sys_ux_list_category>
+</record_update>]]></payload>
+        <payload_hash>2120368080</payload_hash>
+        <record_name>Access</record_name>
+        <reverted_from/>
+        <source>dde63f6773281b50b056ff6f3ab8b77c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 20:52:21</sys_created_on>
+        <sys_id>2ae6bf6773281b50b056ff6f3ab8b712</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1fabb4cd70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 20:52:21</sys_updated_on>
+        <type>UX List Category</type>
+        <update_guid>a6e6bf67c0281b5023b76cea15f51a11</update_guid>
+        <update_guid_history>a6e6bf67c0281b5023b76cea15f51a11:736230307</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 21:13:06</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_list_category">sys_ux_list_category</sys_db_object>
+        <sys_id>1d2213f6b17e498ca7788e8e7f2d32a4</sys_id>
+        <sys_metadata>5af47550c170481e99d3b1c044c1a89a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Access</sys_name>
+        <sys_package display_value="Box Embed Demo" source="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+        <sys_scope_delete display_value="">1f70ed90a4d641c8975bcee8709cefc1</sys_scope_delete>
+        <sys_update_name>sys_ux_list_category_5af47550c170481e99d3b1c044c1a89a</sys_update_name>
+        <sys_update_version display_value="sys_ux_list_category_5af47550c170481e99d3b1c044c1a89a">2ae6bf6773281b50b056ff6f3ab8b712</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 21:13:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

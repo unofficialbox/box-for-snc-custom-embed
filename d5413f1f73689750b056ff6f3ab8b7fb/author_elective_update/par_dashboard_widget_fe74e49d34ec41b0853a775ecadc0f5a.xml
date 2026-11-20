@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_widget">
+  <par_dashboard_widget action="DELETE" apply_defaults="true">
+    <sys_id>fe74e49d34ec41b0853a775ecadc0f5a</sys_id>
+    <sys_scope display_value="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+    <sys_update_name>par_dashboard_widget_fe74e49d34ec41b0853a775ecadc0f5a</sys_update_name>
+    <canvas dashboard="20611c7a055e46cebc09dab26af51c60" dashboard_tab="9e76840e2c744f7c8497e06cbef4152a">7034a021af6943379648a7e315189f5b</canvas>
+    <component>a2b0596cec6b9d49dd1ff9bf76b5084b</component>
+    <component_props>{"headerTitle":"Logs by type","showHeader":true,"showBorder":true,"showLegend":true,"legendPosition":"bottom","dataSources":[{"label":"Logs","sourceType":"table","tableOrViewName":"x_bonh_box_box_logs","filterQuery":"","id":"ds_logs_type"}],"groupBy":[{"groupBy":[{"dataSource":"ds_logs_type","groupByField":"type","isChoice":true}],"maxNumberOfGroups":"ALL","sortBy":"value","sortByOrder":"desc"}],"metrics":[{"dataSource":"ds_logs_type","id":"metric_logs_type_count","aggregateFunction":"COUNT","axisId":"primary"}]}</component_props>
+    <h>16</h>
+    <name>Logs by type</name>
+    <sys_domain>global</sys_domain>
+    <w>20</w>
+    <x>0</x>
+    <y>10</y>
+  </par_dashboard_widget>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</application>
+        <file_path/>
+        <instance_id>c7b257323b35871c16e44a8aa4e45a96</instance_id>
+        <instance_name>dev422158</instance_name>
+        <name>par_dashboard_widget_fe74e49d34ec41b0853a775ecadc0f5a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_widget">
+  <par_dashboard_widget action="INSERT_OR_UPDATE" apply_defaults="true">
+    <sys_id>fe74e49d34ec41b0853a775ecadc0f5a</sys_id>
+    <sys_scope display_value="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+    <sys_update_name>par_dashboard_widget_fe74e49d34ec41b0853a775ecadc0f5a</sys_update_name>
+    <canvas dashboard="20611c7a055e46cebc09dab26af51c60" dashboard_tab="9e76840e2c744f7c8497e06cbef4152a">7034a021af6943379648a7e315189f5b</canvas>
+    <component>a2b0596cec6b9d49dd1ff9bf76b5084b</component>
+    <component_props>{"headerTitle":"Logs by type","showHeader":true,"showBorder":true,"showLegend":true,"legendPosition":"bottom","dataSources":[{"label":"Logs","sourceType":"table","tableOrViewName":"x_bonh_box_box_logs","filterQuery":"","id":"ds_logs_type"}],"groupBy":[{"groupBy":[{"dataSource":"ds_logs_type","groupByField":"type","isChoice":true}],"maxNumberOfGroups":"ALL","sortBy":"value","sortByOrder":"desc"}],"metrics":[{"dataSource":"ds_logs_type","id":"metric_logs_type_count","aggregateFunction":"COUNT","axisId":"primary"}]}</component_props>
+    <h>16</h>
+    <name>Logs by type</name>
+    <sys_domain>global</sys_domain>
+    <w>20</w>
+    <x>0</x>
+    <y>10</y>
+  </par_dashboard_widget>
+</record_update>]]></payload>
+        <payload_hash>301676477</payload_hash>
+        <record_name>Logs by type</record_name>
+        <reverted_from/>
+        <source>dde63f6773281b50b056ff6f3ab8b77c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 20:52:19</sys_created_on>
+        <sys_id>cee67f6773281b50b056ff6f3ab8b743</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1fabb44a70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 20:52:19</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>8ee67f6791281b50576845bffbc9e242</update_guid>
+        <update_guid_history>8ee67f6791281b50576845bffbc9e242:-2115161046</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Logs by type">2dfb3ba373681b50b056ff6f3ab8b7a0</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 21:14:24</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>382dbd512b6a4ca78deab449e1f05949</sys_id>
+        <sys_metadata>fe74e49d34ec41b0853a775ecadc0f5a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Logs by type</sys_name>
+        <sys_package display_value="Box Embed Demo" source="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+        <sys_scope_delete display_value="">1f70ed90a4d641c8975bcee8709cefc1</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_fe74e49d34ec41b0853a775ecadc0f5a</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_fe74e49d34ec41b0853a775ecadc0f5a">cee67f6773281b50b056ff6f3ab8b743</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 21:14:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
