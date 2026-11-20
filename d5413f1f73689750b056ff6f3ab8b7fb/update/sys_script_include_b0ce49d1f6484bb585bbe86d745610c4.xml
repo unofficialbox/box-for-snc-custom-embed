@@ -31,8 +31,15 @@
  *   ga.addParam('sysparm_box_item_id', '123456789');
  *   ga.addParam('sysparm_source', 'Workspace');
  *   ga.getXMLAnswer(function (answer) {
- *       var result = JSON.parse(answer); // { success, embedUrl, message }
+ *       var result = JSON.parse(answer);
+ *       // { success, embedUrl, reason, authUrl, message }
+ *       // reason is '' on success, else sn_role | auth | role | validation |
+ *       // config | error. message is plain text; render your own link from
+ *       // authUrl when reason is 'auth'.
  *   });
+ *
+ * Requires the sys_security_acl of type client_callable_script_include declared
+ * in src/fluent/acls.now.ts. Without it every call is denied.
  */
 var BoxEmbedServiceAjax = Class.create()
 
@@ -50,6 +57,8 @@ BoxEmbedServiceAjax.prototype = Object.extendsObject(global.AbstractAjaxProcesso
             result = {
                 success: false,
                 embedUrl: '',
+                reason: 'error',
+                authUrl: '',
                 message: 'The Box embed could not be built right now. Please try again.',
             }
         }

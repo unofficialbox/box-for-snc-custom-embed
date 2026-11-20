@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_637605_box_ext_0.BoxEmbedService</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Builds a Box folder embed URL. Migrated out of the vendor scope (x_bonh_box) so it survives Box Integration upgrades; integrates only via the vendor public subflows access_gate and mint_login_token.</description>
+        <mobile_callable>false</mobile_callable>
+        <name>BoxEmbedService</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[/**
+ * BoxEmbedService (x_637605_box_ext_0)
+ *
+ * Builds a Box embed URL for a Box folder.
+ *
+ * Migrated out of the vendor scope (x_bonh_box) so it survives Box Integration
+ * upgrades. It integrates with the vendor app ONLY through its public subflows:
+ *
+ *   - x_bonh_box.access_gate        (access = public)
+ *   - x_bonh_box.mint_login_token   (access = public)
+ *
+ * It deliberately does NOT call x_bonh_box.BoxAccessGuard or
+ * x_bonh_box.BoxMappingService: both are package_private and therefore
+ * unreachable from any other scope. _checkAccess() below reimplements
+ * BoxAccessGuard.check() against the public access_gate subflow.
+ *
+ * RETURN CONTRACT - transport agnostic, contains no markup:
+ *
+ *   {
+ *     success:  boolean,
+ *     embedUrl: string,   // populated only when success is true
+ *     reason:   string,   // '' on success, otherwise one of REASONS below
+ *     authUrl:  string,   // populated only when reason is 'auth'
+ *     message:  string    // plain text, safe to render in any surface
+ *   }
+ *
+ * The message field is plain text by design. An earlier version returned an
+ * HTML anchor for the 'auth' case, which only renders in classic UI; a
+ * workspace or UI Builder component would show the markup literally or have to
+ * inject unsanitized HTML. Callers should render their own link from authUrl.
+ */
+var BoxEmbedService = Class.create()
+
+BoxEmbedService.prototype = {
+    BOX_USER_ROLE: 'x_bonh_box.box_user',
+    ACCESS_GATE_SUBFLOW: 'x_bonh_box.access_gate',
+    LOGIN_TOKEN_SUBFLOW: 'x_bonh_box.mint_login_token',
+    EMBED_BASE_PROP: 'x_bonh_box.embed_base_url',
+    FOLDER_NAV_PROP: 'x_bonh_box.embed_ui_folder_navigation',
+    AUTH_PAGE: 'x_bonh_box_user_account.do',
+    LOG: '[BoxEmbedService] ',
+
+    /**
+     * Stable reason codes. Callers should branch on these, not on message text.
+     *   sn_role    - user lacks the x_bonh_box.box_user platform role
+     *   auth       - user has the role but has not connected their Box account
+     *   role       - no Box collaboration role, and auto-collaboration is off
+     *   validation - caller supplied an unsupported item type or bad folder id
+     *   config     - required x_bonh_box property is missing
+     *   error      - the access gate could not be evaluated
+     */
+    REASONS: {
+        SN_ROLE: 'sn_role',
+        AUTH: 'auth',
+        ROLE: 'role',
+        VALIDATION: 'validation',
+        CONFIG: 'config',
+        ERROR: 'error',
+    },
+
+    initialize: function () {},
+
+    /**
+     * @param {string} boxItemType only 'folder' is supported today
+     * @param {string} boxItemId   Box folder ID
+     * @param {string} [source]    calling surface, e.g. 'Workspace'
+     */
+    build: function (boxItemType, boxItemId, source) {
+        source = source || 'Workspace'
+
+        var gate = this._checkAccess(source)
+        if (!gate.cleared) {
+            return this._failure(gate.reason, gate.message, gate.authUrl)
+        }
+
+        var itemType = ('' + (boxItemType || '')).toLowerCase()
+        var itemId = ('' + (boxItemId || '')).trim()
+
+        if (itemType !== 'folder') {
+            return this._failure(
+                this.REASONS.VALIDATION,
+                'This embed builder currently supports Box folders only'
+            )
+        }
+
+        if (!/^[A-Za-z0-9_-]+$/.test(itemId)) {
+            return this._failure(this.REASONS.VALIDATION, 'A valid Box folder ID is required')
+        }
+
+        // The property is expected to contain the folder route, for example:
+        // https://app.box.com/embed/folder
+        var base = ('' + gs.getProperty(this.EMBED_BASE_PROP, '')).replace(/\/+$/, '')
+        if (!base) {
+            gs.error(this.LOG + 'Property ' + this.EMBED_BASE_PROP + ' is not set')
+            return this._failure(this.REASONS.CONFIG, 'Box embed URL is not configured')
+        }
+
+        var url = base + '/' + encodeURIComponent(itemId)
+        var params = []
+
+        var navigationEnabled = '' + gs.getProperty(this.FOLDER_NAV_PROP, 'false') === 'true'
+        if (!navigationEnabled) {
+            params.push('showParentPath=false')
+        }
+
+        var loginToken = this._mintLoginToken(itemId, source)
+        if (loginToken) {
+            params.push('login_token=' + encodeURIComponent(loginToken))
+        }
+
+        if (params.length) {
+            url += '?' + params.join('&')
+        }
+
+        return {
+            success: true,
+            embedUrl: url,
+            reason: '',
+            authUrl: '',
+            message: '',
+        }
+    },
+
+    /**
+     * Cross-scope replacement for x_bonh_box.BoxAccessGuard.check().
+     * Keep behaviour in step with the vendor's guard when Box Integration ships
+     * a new version: the guard is package_private, so this cannot delegate.
+     */
+    _checkAccess: function (source) {
+        if (!gs.hasRole(this.BOX_USER_ROLE)) {
+            return {
+                cleared: false,
+                reason: this.REASONS.SN_ROLE,
+                role: '',
+                authUrl: '',
+                message: 'You do not have access to Box. Please contact your Box admin.',
+            }
+        }
+
+        var outputs
+        try {
+            outputs = sn_fd.FlowAPI.getRunner()
+                .subflow(this.ACCESS_GATE_SUBFLOW)
+                .inForeground()
+                .withInputs({
+                    sn_user_id: gs.getUserID(),
+                    source: source || '',
+                })
+                .run()
+                .getOutputs()
+        } catch (e) {
+            gs.error(this.LOG + 'access_gate subflow failed: ' + e)
+            return {
+                cleared: false,
+                reason: this.REASONS.ERROR,
+                role: '',
+                authUrl: '',
+                message:
+                    'Box access could not be verified right now. Please try again or contact your Box admin.',
+            }
+        }
+
+        var cleared = outputs['cleared'] === true || outputs['cleared'] === 'true'
+        var reason = '' + (outputs['reason'] || '')
+        var role = '' + (outputs['role'] || '')
+
+        if (cleared) {
+            return { cleared: true, reason: '', role: role, authUrl: '', message: '' }
+        }
+
+        if (reason === this.REASONS.AUTH) {
+            return {
+                cleared: false,
+                reason: this.REASONS.AUTH,
+                role: role,
+                authUrl: gs.getProperty('glide.servlet.uri') + this.AUTH_PAGE,
+                message: 'Box user authentication is required. Connect your Box account to continue.',
+            }
+        }
+
+        return {
+            cleared: false,
+            reason: reason || this.REASONS.ROLE,
+            role: role,
+            authUrl: '',
+            message:
+                'You are not set up as a Box collaborator, and automatic collaboration is turned off. Please contact your Box admin.',
+        }
+    },
+
+    _mintLoginToken: function (folderId, source) {
+        try {
+            var outputs = sn_fd.FlowAPI.getRunner()
+                .subflow(this.LOGIN_TOKEN_SUBFLOW)
+                .inForeground()
+                .withInputs({
+                    sn_user_id: gs.getUserID(),
+                    folder_id: folderId,
+                    source: source || '',
+                })
+                .run()
+                .getOutputs()
+
+            var succeeded = outputs['success'] === true || outputs['success'] === 'true'
+            return succeeded ? outputs['login_token'] || '' : ''
+        } catch (e) {
+            gs.error(this.LOG + 'Login-token subflow failed: ' + e)
+            return ''
+        }
+    },
+
+    _failure: function (reason, message, authUrl) {
+        return {
+            success: false,
+            embedUrl: '',
+            reason: reason || this.REASONS.ERROR,
+            authUrl: authUrl || '',
+            message: message || 'The Box embed could not be built.',
+        }
+    },
+
+    type: 'BoxEmbedService',
+}
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 01:53:59</sys_created_on>
+        <sys_id>5c366373caf54b008622cabf924e5829</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>BoxEmbedService</sys_name>
+        <sys_package display_value="Box Embed Demo" source="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+        <sys_update_name>sys_script_include_5c366373caf54b008622cabf924e5829</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 01:53:59</sys_updated_on>
+    </sys_script_include>
+</record_update>
