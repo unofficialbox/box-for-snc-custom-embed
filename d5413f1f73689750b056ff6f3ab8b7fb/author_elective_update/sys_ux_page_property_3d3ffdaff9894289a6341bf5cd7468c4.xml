@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_property">
+  <sys_ux_page_property action="DELETE" apply_defaults="true">
+    <sys_id>3d3ffdaff9894289a6341bf5cd7468c4</sys_id>
+    <sys_scope display_value="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+    <sys_update_name>sys_ux_page_property_3d3ffdaff9894289a6341bf5cd7468c4</sys_update_name>
+    <description/>
+    <name>chrome_tab</name>
+    <page>37d015e704924c85aa5e97dccd0df681</page>
+    <route/>
+    <suffix>chrome_tab</suffix>
+    <type>json</type>
+    <value>{"contextual":["record"],"newTabMenu":[{"label":{"translatable":true,"message":"New x_bonh_box_box_folder_mapping"},"routeInfo":{"route":"record","fields":{"table":"x_bonh_box_box_folder_mapping","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_bonh_box_box_folder_mapping","canCreate":true}}},{"label":{"translatable":true,"message":"New x_bonh_box_transactional_folder_mapping"},"routeInfo":{"route":"record","fields":{"table":"x_bonh_box_transactional_folder_mapping","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_bonh_box_transactional_folder_mapping","canCreate":true}}},{"label":{"translatable":true,"message":"New x_bonh_box_box_logs"},"routeInfo":{"route":"record","fields":{"table":"x_bonh_box_box_logs","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_bonh_box_box_logs","canCreate":true}}},{"label":{"translatable":true,"message":"New x_bonh_box_roles"},"routeInfo":{"route":"record","fields":{"table":"x_bonh_box_roles","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_bonh_box_roles","canCreate":true}}},{"label":{"translatable":true,"message":"New x_bonh_box_external_users"},"routeInfo":{"route":"record","fields":{"table":"x_bonh_box_external_users","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_bonh_box_external_users","canCreate":true}}},{"label":{"translatable":true,"message":"New x_bonh_box_folder_naming_scheme"},"routeInfo":{"route":"record","fields":{"table":"x_bonh_box_folder_naming_scheme","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_bonh_box_folder_naming_scheme","canCreate":true}}},{"label":{"translatable":true,"message":"New x_bonh_box_widget_mapping"},"routeInfo":{"route":"record","fields":{"table":"x_bonh_box_widget_mapping","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_bonh_box_widget_mapping","canCreate":true}}}],"maxMainTabLimit":10,"maxTotalSubTabLimit":30}</value>
+  </sys_ux_page_property>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</application>
+        <file_path/>
+        <instance_id>c7b257323b35871c16e44a8aa4e45a96</instance_id>
+        <instance_name>dev422158</instance_name>
+        <name>sys_ux_page_property_3d3ffdaff9894289a6341bf5cd7468c4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_property">
+  <sys_ux_page_property action="INSERT_OR_UPDATE" apply_defaults="true">
+    <sys_id>3d3ffdaff9894289a6341bf5cd7468c4</sys_id>
+    <sys_scope display_value="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+    <sys_update_name>sys_ux_page_property_3d3ffdaff9894289a6341bf5cd7468c4</sys_update_name>
+    <description/>
+    <name>chrome_tab</name>
+    <page>37d015e704924c85aa5e97dccd0df681</page>
+    <route/>
+    <suffix>chrome_tab</suffix>
+    <type>json</type>
+    <value>{"contextual":["record"],"newTabMenu":[{"label":{"translatable":true,"message":"New x_bonh_box_box_folder_mapping"},"routeInfo":{"route":"record","fields":{"table":"x_bonh_box_box_folder_mapping","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_bonh_box_box_folder_mapping","canCreate":true}}},{"label":{"translatable":true,"message":"New x_bonh_box_transactional_folder_mapping"},"routeInfo":{"route":"record","fields":{"table":"x_bonh_box_transactional_folder_mapping","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_bonh_box_transactional_folder_mapping","canCreate":true}}},{"label":{"translatable":true,"message":"New x_bonh_box_box_logs"},"routeInfo":{"route":"record","fields":{"table":"x_bonh_box_box_logs","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_bonh_box_box_logs","canCreate":true}}},{"label":{"translatable":true,"message":"New x_bonh_box_roles"},"routeInfo":{"route":"record","fields":{"table":"x_bonh_box_roles","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_bonh_box_roles","canCreate":true}}},{"label":{"translatable":true,"message":"New x_bonh_box_external_users"},"routeInfo":{"route":"record","fields":{"table":"x_bonh_box_external_users","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_bonh_box_external_users","canCreate":true}}},{"label":{"translatable":true,"message":"New x_bonh_box_folder_naming_scheme"},"routeInfo":{"route":"record","fields":{"table":"x_bonh_box_folder_naming_scheme","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_bonh_box_folder_naming_scheme","canCreate":true}}},{"label":{"translatable":true,"message":"New x_bonh_box_widget_mapping"},"routeInfo":{"route":"record","fields":{"table":"x_bonh_box_widget_mapping","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_bonh_box_widget_mapping","canCreate":true}}}],"maxMainTabLimit":10,"maxTotalSubTabLimit":30}</value>
+  </sys_ux_page_property>
+</record_update>]]></payload>
+        <payload_hash>611990713</payload_hash>
+        <record_name>chrome_tab</record_name>
+        <reverted_from/>
+        <source>dde63f6773281b50b056ff6f3ab8b77c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 20:52:21</sys_created_on>
+        <sys_id>aee6bf6773281b50b056ff6f3ab8b760</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1fabb4f280000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 20:52:21</sys_updated_on>
+        <type>UX Page Property</type>
+        <update_guid>6ee6bf675c281b50adc05eed31dd575f</update_guid>
+        <update_guid_history>6ee6bf675c281b50adc05eed31dd575f:1178150090</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 21:13:07</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_property">sys_ux_page_property</sys_db_object>
+        <sys_id>03f27ee7fc13447880279e64f90b5944</sys_id>
+        <sys_metadata>3d3ffdaff9894289a6341bf5cd7468c4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_tab</sys_name>
+        <sys_package display_value="Box Embed Demo" source="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+        <sys_scope_delete display_value="">1f70ed90a4d641c8975bcee8709cefc1</sys_scope_delete>
+        <sys_update_name>sys_ux_page_property_3d3ffdaff9894289a6341bf5cd7468c4</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_property_3d3ffdaff9894289a6341bf5cd7468c4">aee6bf6773281b50b056ff6f3ab8b760</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 21:13:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_list_category">
+  <sys_ux_list_category action="DELETE" apply_defaults="true">
+    <sys_id>b2eb0241d71545e1b895fafeba767fe8</sys_id>
+    <sys_scope display_value="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+    <sys_update_name>sys_ux_list_category_b2eb0241d71545e1b895fafeba767fe8</sys_update_name>
+    <active>true</active>
+    <configuration>fbc1e71454c04e75b4f51ca40a100e14</configuration>
+    <description>Box folder mappings maintained by the Box Integration app.</description>
+    <order>100</order>
+    <title>Folders</title>
+  </sys_ux_list_category>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</application>
+        <file_path/>
+        <instance_id>c7b257323b35871c16e44a8aa4e45a96</instance_id>
+        <instance_name>dev422158</instance_name>
+        <name>sys_ux_list_category_b2eb0241d71545e1b895fafeba767fe8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_list_category">
+  <sys_ux_list_category action="INSERT_OR_UPDATE" apply_defaults="true">
+    <sys_id>b2eb0241d71545e1b895fafeba767fe8</sys_id>
+    <sys_scope display_value="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+    <sys_update_name>sys_ux_list_category_b2eb0241d71545e1b895fafeba767fe8</sys_update_name>
+    <active>true</active>
+    <configuration>fbc1e71454c04e75b4f51ca40a100e14</configuration>
+    <description>Box folder mappings maintained by the Box Integration app.</description>
+    <order>100</order>
+    <title>Folders</title>
+  </sys_ux_list_category>
+</record_update>]]></payload>
+        <payload_hash>-168240220</payload_hash>
+        <record_name>Folders</record_name>
+        <reverted_from/>
+        <source>dde63f6773281b50b056ff6f3ab8b77c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 20:52:21</sys_created_on>
+        <sys_id>aae6bf6773281b50b056ff6f3ab8b716</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1fabb4cff0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 20:52:21</sys_updated_on>
+        <type>UX List Category</type>
+        <update_guid>6ae6bf679f281b509f853fdbdb435e15</update_guid>
+        <update_guid_history>6ae6bf679f281b509f853fdbdb435e15:484030516</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 21:13:05</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_list_category">sys_ux_list_category</sys_db_object>
+        <sys_id>6439958654464780a5fefbf3dcd44000</sys_id>
+        <sys_metadata>b2eb0241d71545e1b895fafeba767fe8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Folders</sys_name>
+        <sys_package display_value="Box Embed Demo" source="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+        <sys_scope_delete display_value="">1f70ed90a4d641c8975bcee8709cefc1</sys_scope_delete>
+        <sys_update_name>sys_ux_list_category_b2eb0241d71545e1b895fafeba767fe8</sys_update_name>
+        <sys_update_version display_value="sys_ux_list_category_b2eb0241d71545e1b895fafeba767fe8">aae6bf6773281b50b056ff6f3ab8b716</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 21:13:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_property">
+  <sys_ux_page_property action="DELETE" apply_defaults="true">
+    <sys_id>e457fb5b730941759d39e3c3507e7e17</sys_id>
+    <sys_scope display_value="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+    <sys_update_name>sys_ux_page_property_e457fb5b730941759d39e3c3507e7e17</sys_update_name>
+    <description/>
+    <name>listConfigId</name>
+    <page>37d015e704924c85aa5e97dccd0df681</page>
+    <route/>
+    <suffix>listConfigId</suffix>
+    <type>string</type>
+    <value>fbc1e71454c04e75b4f51ca40a100e14</value>
+  </sys_ux_page_property>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</application>
+        <file_path/>
+        <instance_id>c7b257323b35871c16e44a8aa4e45a96</instance_id>
+        <instance_name>dev422158</instance_name>
+        <name>sys_ux_page_property_e457fb5b730941759d39e3c3507e7e17</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_property">
+  <sys_ux_page_property action="INSERT_OR_UPDATE" apply_defaults="true">
+    <sys_id>e457fb5b730941759d39e3c3507e7e17</sys_id>
+    <sys_scope display_value="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+    <sys_update_name>sys_ux_page_property_e457fb5b730941759d39e3c3507e7e17</sys_update_name>
+    <description/>
+    <name>listConfigId</name>
+    <page>37d015e704924c85aa5e97dccd0df681</page>
+    <route/>
+    <suffix>listConfigId</suffix>
+    <type>string</type>
+    <value>fbc1e71454c04e75b4f51ca40a100e14</value>
+  </sys_ux_page_property>
+</record_update>]]></payload>
+        <payload_hash>1935732026</payload_hash>
+        <record_name>listConfigId</record_name>
+        <reverted_from/>
+        <source>dde63f6773281b50b056ff6f3ab8b77c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 20:52:22</sys_created_on>
+        <sys_id>a6e6bf6773281b50b056ff6f3ab8b76a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1fabb4f740000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 20:52:22</sys_updated_on>
+        <type>UX Page Property</type>
+        <update_guid>66e6bf6759281b50a88024d2b88ea269</update_guid>
+        <update_guid_history>66e6bf6759281b50a88024d2b88ea269:-1236433692</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 21:13:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_property">sys_ux_page_property</sys_db_object>
+        <sys_id>5b8980c759ab41d099addf1635378831</sys_id>
+        <sys_metadata>e457fb5b730941759d39e3c3507e7e17</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>listConfigId</sys_name>
+        <sys_package display_value="Box Embed Demo" source="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+        <sys_scope_delete display_value="">1f70ed90a4d641c8975bcee8709cefc1</sys_scope_delete>
+        <sys_update_name>sys_ux_page_property_e457fb5b730941759d39e3c3507e7e17</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_property_e457fb5b730941759d39e3c3507e7e17">a6e6bf6773281b50b056ff6f3ab8b76a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 21:13:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+  <sys_security_acl_role action="DELETE" apply_defaults="true">
+    <sys_id>2f9ef04e61f34a9c9a5fa583fbd05296</sys_id>
+    <sys_scope display_value="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+    <sys_update_name>sys_security_acl_role_2f9ef04e61f34a9c9a5fa583fbd05296</sys_update_name>
+    <sys_name>box-embed-demo.*.x_637605_box_ext_0.box_workspace_user</sys_name>
+    <sys_security_acl>e2fc11df3a8b421c92cb26f9188aa3c3</sys_security_acl>
+    <sys_user_role name="x_637605_box_ext_0.box_workspace_user">0071b40667024c34b9b01853982ea183</sys_user_role>
+  </sys_security_acl_role>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</application>
+        <file_path/>
+        <instance_id>c7b257323b35871c16e44a8aa4e45a96</instance_id>
+        <instance_name>dev422158</instance_name>
+        <name>sys_security_acl_role_2f9ef04e61f34a9c9a5fa583fbd05296</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+  <sys_security_acl_role action="INSERT_OR_UPDATE" apply_defaults="true">
+    <sys_id>2f9ef04e61f34a9c9a5fa583fbd05296</sys_id>
+    <sys_scope display_value="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+    <sys_update_name>sys_security_acl_role_2f9ef04e61f34a9c9a5fa583fbd05296</sys_update_name>
+    <sys_name>box-embed-demo.*.x_637605_box_ext_0.box_workspace_user</sys_name>
+    <sys_security_acl>e2fc11df3a8b421c92cb26f9188aa3c3</sys_security_acl>
+    <sys_user_role name="x_637605_box_ext_0.box_workspace_user">0071b40667024c34b9b01853982ea183</sys_user_role>
+  </sys_security_acl_role>
+</record_update>]]></payload>
+        <payload_hash>-172120383</payload_hash>
+        <record_name>box-embed-demo.*.x_637605_box_ext_0.box_workspace_user</record_name>
+        <reverted_from/>
+        <source>dde63f6773281b50b056ff6f3ab8b77c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 20:52:19</sys_created_on>
+        <sys_id>46e67f6773281b50b056ff6f3ab8b771</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1fabb47190000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 20:52:19</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>06e67f67bd281b5086fcecc54652cd70</update_guid>
+        <update_guid_history>06e67f67bd281b5086fcecc54652cd70:1494170062</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="box-embed-demo.*.x_637605_box_ext_0.box_workspace_user">89fbb7a373681b50b056ff6f3ab8b7c1</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 21:14:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>3304c242939b4b809baa752d61e66400</sys_id>
+        <sys_metadata>2f9ef04e61f34a9c9a5fa583fbd05296</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>box-embed-demo.*.x_637605_box_ext_0.box_workspace_user</sys_name>
+        <sys_package display_value="Box Embed Demo" source="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_package>
+        <sys_parent display_value="">e2fc11df3a8b421c92cb26f9188aa3c3</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+        <sys_scope_delete display_value="">1f70ed90a4d641c8975bcee8709cefc1</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_2f9ef04e61f34a9c9a5fa583fbd05296</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_2f9ef04e61f34a9c9a5fa583fbd05296">46e67f6773281b50b056ff6f3ab8b771</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 21:14:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

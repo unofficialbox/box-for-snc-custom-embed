@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+  <sys_security_acl action="DELETE" apply_defaults="true">
+    <sys_id>3fdd4cc02bf54778bc919244d24ee187</sys_id>
+    <sys_scope display_value="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+    <sys_update_name>sys_security_acl_3fdd4cc02bf54778bc919244d24ee187</sys_update_name>
+    <active>true</active>
+    <admin_overrides>true</admin_overrides>
+    <advanced>false</advanced>
+    <applies_to/>
+    <condition/>
+    <decision_type>allow</decision_type>
+    <description>Allows authenticated users to call BoxEmbedServiceAjax over GlideAjax. Box authorization is enforced inside BoxEmbedService.build() so that unauthorized users receive an actionable reason instead of a denial.</description>
+    <name>BoxEmbedServiceAjax</name>
+    <operation display_value="execute">execute</operation>
+    <script/>
+    <security_attribute>239bdf0c47d23110ba46ff58936d4330</security_attribute>
+    <sys_name>BoxEmbedServiceAjax</sys_name>
+    <type>client_callable_script_include</type>
+  </sys_security_acl>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</application>
+        <file_path/>
+        <instance_id>c7b257323b35871c16e44a8aa4e45a96</instance_id>
+        <instance_name>dev422158</instance_name>
+        <name>sys_security_acl_3fdd4cc02bf54778bc919244d24ee187</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+  <sys_security_acl action="INSERT_OR_UPDATE" apply_defaults="true">
+    <sys_id>3fdd4cc02bf54778bc919244d24ee187</sys_id>
+    <sys_scope display_value="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+    <sys_update_name>sys_security_acl_3fdd4cc02bf54778bc919244d24ee187</sys_update_name>
+    <active>true</active>
+    <admin_overrides>true</admin_overrides>
+    <advanced>false</advanced>
+    <applies_to/>
+    <condition/>
+    <decision_type>allow</decision_type>
+    <description>Allows authenticated users to call BoxEmbedServiceAjax over GlideAjax. Box authorization is enforced inside BoxEmbedService.build() so that unauthorized users receive an actionable reason instead of a denial.</description>
+    <name>BoxEmbedServiceAjax</name>
+    <operation display_value="execute">execute</operation>
+    <script/>
+    <security_attribute>239bdf0c47d23110ba46ff58936d4330</security_attribute>
+    <sys_name>BoxEmbedServiceAjax</sys_name>
+    <type>client_callable_script_include</type>
+  </sys_security_acl>
+</record_update>]]></payload>
+        <payload_hash>864800239</payload_hash>
+        <record_name>BoxEmbedServiceAjax</record_name>
+        <reverted_from/>
+        <source>6a12f7eb73e41b50b056ff6f3ab8b7a7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 20:31:22</sys_created_on>
+        <sys_id>83123beb73e41b50b056ff6f3ab8b733</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1faa817fa0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 20:31:22</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>03123bebb9e41b50777df4d9798d5d32</update_guid>
+        <update_guid_history>03123bebb9e41b50777df4d9798d5d32:-704835171</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 21:14:26</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>498141571c124fc49a92554dd5a66390</sys_id>
+        <sys_metadata>3fdd4cc02bf54778bc919244d24ee187</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>BoxEmbedServiceAjax</sys_name>
+        <sys_package display_value="Box Embed Demo" source="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+        <sys_scope_delete display_value="">1f70ed90a4d641c8975bcee8709cefc1</sys_scope_delete>
+        <sys_update_name>sys_security_acl_3fdd4cc02bf54778bc919244d24ee187</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_3fdd4cc02bf54778bc919244d24ee187">83123beb73e41b50b056ff6f3ab8b733</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 21:14:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

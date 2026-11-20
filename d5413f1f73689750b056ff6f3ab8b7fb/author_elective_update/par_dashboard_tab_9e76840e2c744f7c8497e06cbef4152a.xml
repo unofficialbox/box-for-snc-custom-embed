@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_tab">
+  <par_dashboard_tab action="DELETE" apply_defaults="true">
+    <sys_id>9e76840e2c744f7c8497e06cbef4152a</sys_id>
+    <sys_scope display_value="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+    <sys_update_name>par_dashboard_tab_9e76840e2c744f7c8497e06cbef4152a</sys_update_name>
+    <active>true</active>
+    <dashboard>20611c7a055e46cebc09dab26af51c60</dashboard>
+    <name>Overview</name>
+    <order>0</order>
+  </par_dashboard_tab>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</application>
+        <file_path/>
+        <instance_id>c7b257323b35871c16e44a8aa4e45a96</instance_id>
+        <instance_name>dev422158</instance_name>
+        <name>par_dashboard_tab_9e76840e2c744f7c8497e06cbef4152a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_tab">
+  <par_dashboard_tab action="INSERT_OR_UPDATE" apply_defaults="true">
+    <sys_id>9e76840e2c744f7c8497e06cbef4152a</sys_id>
+    <sys_scope display_value="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+    <sys_update_name>par_dashboard_tab_9e76840e2c744f7c8497e06cbef4152a</sys_update_name>
+    <active>true</active>
+    <dashboard>20611c7a055e46cebc09dab26af51c60</dashboard>
+    <name>Overview</name>
+    <order>0</order>
+  </par_dashboard_tab>
+</record_update>]]></payload>
+        <payload_hash>424712822</payload_hash>
+        <record_name>Overview</record_name>
+        <reverted_from/>
+        <source>dde63f6773281b50b056ff6f3ab8b77c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 20:52:18</sys_created_on>
+        <sys_id>7de67f6773281b50b056ff6f3ab8b71b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1fabb433a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 20:52:18</sys_updated_on>
+        <type>PAR Dashboard Tab</type>
+        <update_guid>f9e67f6772281b50bb1d8c5b7ecefd1a</update_guid>
+        <update_guid_history>f9e67f6772281b50bb1d8c5b7ecefd1a:828501040</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Overview">edfb3ba373681b50b056ff6f3ab8b7ce</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 21:14:24</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_tab">par_dashboard_tab</sys_db_object>
+        <sys_id>28f90cb9e4bc43808f745cf59e19f129</sys_id>
+        <sys_metadata>9e76840e2c744f7c8497e06cbef4152a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Overview</sys_name>
+        <sys_package display_value="Box Embed Demo" source="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+        <sys_scope_delete display_value="">1f70ed90a4d641c8975bcee8709cefc1</sys_scope_delete>
+        <sys_update_name>par_dashboard_tab_9e76840e2c744f7c8497e06cbef4152a</sys_update_name>
+        <sys_update_version display_value="par_dashboard_tab_9e76840e2c744f7c8497e06cbef4152a">7de67f6773281b50b056ff6f3ab8b71b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 21:14:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

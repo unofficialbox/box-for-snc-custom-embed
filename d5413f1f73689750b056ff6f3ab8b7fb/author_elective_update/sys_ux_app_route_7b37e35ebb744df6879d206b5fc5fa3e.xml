@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+  <sys_ux_app_route action="DELETE" apply_defaults="true">
+    <sys_id>7b37e35ebb744df6879d206b5fc5fa3e</sys_id>
+    <sys_scope display_value="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+    <sys_update_name>sys_ux_app_route_7b37e35ebb744df6879d206b5fc5fa3e</sys_update_name>
+    <app_config>f765dda1af3346258c400c1f23266686</app_config>
+    <description/>
+    <extension_point/>
+    <fields/>
+    <icon/>
+    <interoperable>false</interoperable>
+    <name>Dashboards Default</name>
+    <optional_parameters>sysId,edit,tabSysId,filter,element</optional_parameters>
+    <order>0</order>
+    <parent_macroponent>c276387cc331101080d6d3658940ddd2</parent_macroponent>
+    <parent_macroponent_composition_element_id/>
+    <route_type>home</route_type>
+    <screen_type>a30a1e0d2ead42ab9634510b6a928a4e</screen_type>
+  </sys_ux_app_route>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</application>
+        <file_path/>
+        <instance_id>c7b257323b35871c16e44a8aa4e45a96</instance_id>
+        <instance_name>dev422158</instance_name>
+        <name>sys_ux_app_route_7b37e35ebb744df6879d206b5fc5fa3e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+  <sys_ux_app_route action="INSERT_OR_UPDATE" apply_defaults="true">
+    <sys_id>7b37e35ebb744df6879d206b5fc5fa3e</sys_id>
+    <sys_scope display_value="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+    <sys_update_name>sys_ux_app_route_7b37e35ebb744df6879d206b5fc5fa3e</sys_update_name>
+    <app_config>f765dda1af3346258c400c1f23266686</app_config>
+    <description/>
+    <extension_point/>
+    <fields/>
+    <icon/>
+    <interoperable>false</interoperable>
+    <name>Dashboards Default</name>
+    <optional_parameters>sysId,edit,tabSysId,filter,element</optional_parameters>
+    <order>0</order>
+    <parent_macroponent>c276387cc331101080d6d3658940ddd2</parent_macroponent>
+    <parent_macroponent_composition_element_id/>
+    <route_type>home</route_type>
+    <screen_type>a30a1e0d2ead42ab9634510b6a928a4e</screen_type>
+  </sys_ux_app_route>
+</record_update>]]></payload>
+        <payload_hash>1074006690</payload_hash>
+        <record_name>Dashboards Default</record_name>
+        <reverted_from/>
+        <source>dde63f6773281b50b056ff6f3ab8b77c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 20:52:20</sys_created_on>
+        <sys_id>d2e67f6773281b50b056ff6f3ab8b799</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1fabb49020000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 20:52:20</sys_updated_on>
+        <type>UX App Route</type>
+        <update_guid>92e67f67a7281b50f330239e477fe898</update_guid>
+        <update_guid_history>92e67f67a7281b50f330239e477fe898:1446192824</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 21:12:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_app_route">sys_ux_app_route</sys_db_object>
+        <sys_id>60cdaa22c6704560a912d4b0e6c7e400</sys_id>
+        <sys_metadata>7b37e35ebb744df6879d206b5fc5fa3e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Dashboards Default</sys_name>
+        <sys_package display_value="Box Embed Demo" source="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+        <sys_scope_delete display_value="">1f70ed90a4d641c8975bcee8709cefc1</sys_scope_delete>
+        <sys_update_name>sys_ux_app_route_7b37e35ebb744df6879d206b5fc5fa3e</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_route_7b37e35ebb744df6879d206b5fc5fa3e">d2e67f6773281b50b056ff6f3ab8b799</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 21:12:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+  <sys_ux_app_route action="DELETE" apply_defaults="true">
+    <sys_id>1fb8706f911f4738b6628c4641046cae</sys_id>
+    <sys_scope display_value="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+    <sys_update_name>sys_ux_app_route_1fb8706f911f4738b6628c4641046cae</sys_update_name>
+    <app_config>f765dda1af3346258c400c1f23266686</app_config>
+    <description/>
+    <extension_point/>
+    <fields/>
+    <icon/>
+    <interoperable>false</interoperable>
+    <name>List Page</name>
+    <optional_parameters>listId</optional_parameters>
+    <order>0</order>
+    <parent_macroponent>c276387cc331101080d6d3658940ddd2</parent_macroponent>
+    <parent_macroponent_composition_element_id/>
+    <route_type>list</route_type>
+    <screen_type>5ec0722f55d04cd6acecaad6da0d2662</screen_type>
+  </sys_ux_app_route>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</application>
+        <file_path/>
+        <instance_id>c7b257323b35871c16e44a8aa4e45a96</instance_id>
+        <instance_name>dev422158</instance_name>
+        <name>sys_ux_app_route_1fb8706f911f4738b6628c4641046cae</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+  <sys_ux_app_route action="INSERT_OR_UPDATE" apply_defaults="true">
+    <sys_id>1fb8706f911f4738b6628c4641046cae</sys_id>
+    <sys_scope display_value="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+    <sys_update_name>sys_ux_app_route_1fb8706f911f4738b6628c4641046cae</sys_update_name>
+    <app_config>f765dda1af3346258c400c1f23266686</app_config>
+    <description/>
+    <extension_point/>
+    <fields/>
+    <icon/>
+    <interoperable>false</interoperable>
+    <name>List Page</name>
+    <optional_parameters>listId</optional_parameters>
+    <order>0</order>
+    <parent_macroponent>c276387cc331101080d6d3658940ddd2</parent_macroponent>
+    <parent_macroponent_composition_element_id/>
+    <route_type>list</route_type>
+    <screen_type>5ec0722f55d04cd6acecaad6da0d2662</screen_type>
+  </sys_ux_app_route>
+</record_update>]]></payload>
+        <payload_hash>1495016212</payload_hash>
+        <record_name>List Page</record_name>
+        <reverted_from/>
+        <source>dde63f6773281b50b056ff6f3ab8b77c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 20:52:20</sys_created_on>
+        <sys_id>dae67f6773281b50b056ff6f3ab8b78e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1fabb48b80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 20:52:20</sys_updated_on>
+        <type>UX App Route</type>
+        <update_guid>5ae67f67ac281b504101dd805489e38d</update_guid>
+        <update_guid_history>5ae67f67ac281b504101dd805489e38d:-936994711</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-20 21:12:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_app_route">sys_ux_app_route</sys_db_object>
+        <sys_id>1771b9ac7a204e7699efdd7a95109ee1</sys_id>
+        <sys_metadata>1fb8706f911f4738b6628c4641046cae</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>List Page</sys_name>
+        <sys_package display_value="Box Embed Demo" source="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
+        <sys_scope_delete display_value="">1f70ed90a4d641c8975bcee8709cefc1</sys_scope_delete>
+        <sys_update_name>sys_ux_app_route_1fb8706f911f4738b6628c4641046cae</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_route_1fb8706f911f4738b6628c4641046cae">dae67f6773281b50b056ff6f3ab8b78e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 21:12:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

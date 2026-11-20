@@ -71,12 +71,18 @@ BoxEmbedService.prototype = {
 
     initialize: function () {},
 
+    SUPPORTED_TYPES: ['file', 'folder', 'hubs', 'app', 'ai-chat'],
+    AI_CHAT_TYPE: 'ai-chat',
+
     /**
-     * @param {string} boxItemType only 'folder' is supported today
-     * @param {string} boxItemId   Box folder ID
-     * @param {string} [source]    calling surface, e.g. 'Workspace'
+     * @param {string} boxItemType  one of SUPPORTED_TYPES (defaults to 'folder').
+     *                              'ai-chat' builds the Hubs AI Chat embed: {domain}/ai-chat
+     * @param {string} boxItemId    Box ID of the item; the hub ID for 'hubs' and 'ai-chat'
+     * @param {string} [source]     calling surface, e.g. 'Workspace'
+     * @param {string} [sharedLink] 'ai-chat' only: hub shared link value. Without it the
+     *                              chat loads only for collaborators on the hub.
      */
-    build: function (boxItemType, boxItemId, source) {
+    build: function (boxItemType, boxItemId, source, sharedLink) {
         source = source || 'Workspace'
 
         var gate = this._checkAccess(source)
@@ -84,33 +90,54 @@ BoxEmbedService.prototype = {
             return this._failure(gate.reason, gate.message, gate.authUrl)
         }
 
-        var itemType = ('' + (boxItemType || '')).toLowerCase()
+        var itemType = ('' + (boxItemType || 'folder')).trim().toLowerCase()
         var itemId = ('' + (boxItemId || '')).trim()
 
-        if (itemType !== 'folder') {
+        if (this.SUPPORTED_TYPES.indexOf(itemType) === -1) {
             return this._failure(
                 this.REASONS.VALIDATION,
-                'This embed builder currently supports Box folders only'
+                'Item type is not supported. Valid options: ' + this.SUPPORTED_TYPES.join(', ')
             )
         }
 
         if (!/^[A-Za-z0-9_-]+$/.test(itemId)) {
-            return this._failure(this.REASONS.VALIDATION, 'A valid Box folder ID is required')
+            return this._failure(this.REASONS.VALIDATION, 'A valid Box ' + itemType + ' ID is required')
         }
 
-        // The property is expected to contain the folder route, for example:
-        // https://app.box.com/embed/folder
-        var base = ('' + gs.getProperty(this.EMBED_BASE_PROP, '')).replace(/\/+$/, '')
+        // The property may hold the embed root (https://acme.app.box.com/embed) or the
+        // legacy folder route (https://acme.app.box.com/embed/folder). Normalise to the
+        // root so the item type can be appended.
+        var base = ('' + gs.getProperty(this.EMBED_BASE_PROP, ''))
+            .trim()
+            .replace(/\/+$/, '')
+            .replace(/\/(file|folder|hubs|app)$/i, '')
         if (!base) {
             gs.error(this.LOG + 'Property ' + this.EMBED_BASE_PROP + ' is not set')
             return this._failure(this.REASONS.CONFIG, 'Box embed URL is not configured')
         }
 
-        var url = base + '/' + encodeURIComponent(itemId)
+        var isAiChat = itemType === this.AI_CHAT_TYPE
+        var link = ('' + (sharedLink || '')).trim()
+        if (isAiChat && link && !/^[A-Za-z0-9_-]+$/.test(link)) {
+            return this._failure(this.REASONS.VALIDATION, 'The shared link value is not valid')
+        }
+
+        // Hubs AI Chat is served from {domain}/ai-chat, outside the /embed route, and
+        // takes the hub as a query parameter rather than a path segment.
+        var url = isAiChat
+            ? base.replace(/\/embed$/i, '') + '/ai-chat'
+            : base + '/' + itemType + '/' + encodeURIComponent(itemId)
         var params = []
+        if (isAiChat) {
+            params.push('showCloseButton=false')
+            params.push('hubId=' + encodeURIComponent(itemId))
+            if (link) {
+                params.push('sharedLink=' + encodeURIComponent(link))
+            }
+        }
 
         var navigationEnabled = '' + gs.getProperty(this.FOLDER_NAV_PROP, 'false') === 'true'
-        if (!navigationEnabled) {
+        if (!isAiChat && !navigationEnabled) {
             params.push('showParentPath=false')
         }
 
@@ -237,13 +264,13 @@ BoxEmbedService.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-11-20 01:53:59</sys_created_on>
         <sys_id>5c366373caf54b008622cabf924e5829</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>BoxEmbedService</sys_name>
         <sys_package display_value="Box Embed Demo" source="x_637605_box_ext_0">d5413f1f73689750b056ff6f3ab8b7fb</sys_package>
         <sys_policy/>
         <sys_scope display_value="Box Embed Demo">d5413f1f73689750b056ff6f3ab8b7fb</sys_scope>
         <sys_update_name>sys_script_include_5c366373caf54b008622cabf924e5829</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-11-20 01:53:59</sys_updated_on>
+        <sys_updated_on>2026-11-20 23:11:57</sys_updated_on>
     </sys_script_include>
 </record_update>
